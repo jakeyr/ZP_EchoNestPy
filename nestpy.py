@@ -62,7 +62,7 @@ def alexa_main():
 def apicalls():
 	if request.method == 'POST':
 		data = request.get_json()
-		print "POST"
+		print(data)
 		sessionId = myApp.data_handler(data)
 		return sessionId + "\n"
 
